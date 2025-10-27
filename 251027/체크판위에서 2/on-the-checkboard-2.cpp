@@ -7,7 +7,7 @@ int R, C;
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    
+
     cin >> R >> C;
     vector<vector<char>> v(R, vector<char>(C));
 
@@ -27,7 +27,7 @@ int main() {
                 for(int r = j+1 ; r < C-1 ; r++) {
                     if(start != v[i][j] && v[i][j] != v[k][r] && v[k][r] != end) {
                         cnt++;
-                        cout << i << ", " << j << ", " << k <<", " << r << "\n";
+                        // cout << i << ", " << j << ", " << k <<", " << r << "\n";
                     }
                 }
             }
