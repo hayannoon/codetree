@@ -14,12 +14,6 @@ int main() {
         }
     }
 
-    for(auto i : v) {
-        for(auto k : i) {
-            cout << k << " ";
-        }
-        cout <<"\n";
-    }
     char start = v[0][0];
     char end = v[R-1][C-1];
     int cnt = 0;
