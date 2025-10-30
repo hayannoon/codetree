@@ -21,7 +21,9 @@ int main() {
         value = value * 2 + (ch - '0');
     }
 
-    cout << value << "\n";
+    if(value == 1) {
+        cout << 0 << "\n";
+    } else cout << value << "\n";
 
     return 0;
 }
