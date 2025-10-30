@@ -19,11 +19,13 @@ int main() {
             changeFlag = true;
         }
         value = value * 2 + (ch - '0');
+
     }
 
-    if(value == 1) {
-        cout << 0 << "\n";
-    } else cout << value << "\n";
+    if(!changeFlag) {
+        value --;
+    }
+    cout << value << "\n";
 
     return 0;
 }
