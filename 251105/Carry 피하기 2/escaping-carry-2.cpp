@@ -10,13 +10,13 @@ int N;
 int getSumIfCarry(int a, int b, int c) {
     int backup = a+b+c;
 
-    while(a!=0 && b!=0 && c!=0) {
+    while(a!=0 || b!=0 || c!=0) {
         int sum = 0;
         sum += a%10;
         sum += b%10;
         sum += c%10;
 
-        if(sum>10) return INT_MIN;
+        if(sum >= 10) return INT_MIN;
 
         a /= 10;
         b /= 10;
