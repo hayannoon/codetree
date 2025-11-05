@@ -27,11 +27,12 @@ int getSumIfCarry(int a, int b, int c) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
     cin >> N;
     vector<int> v;
     v.resize(N);
     int res = INT_MIN;
-
 
     for(int i = 0 ; i < N ; i++) {
         cin >> v[i];
@@ -45,7 +46,7 @@ int main() {
         }
     }
 
-    cout << res << "\n";
+    cout << (res == INT_MIN ? -1 : res) << "\n";
 
     return 0;
 }
