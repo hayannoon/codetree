@@ -12,6 +12,8 @@ bool checkRange(int x, int y) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
     cin >> N >> M;
     vector<vector<char>> v(N, vector<char>(M, ' '));
     int cnt = 0;
