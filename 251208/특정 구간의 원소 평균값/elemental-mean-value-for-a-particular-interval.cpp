@@ -17,6 +17,9 @@ double getAverage(int start, int end) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     cin >> N;
     v.resize(N,0);
 
@@ -24,9 +27,9 @@ int main() {
         cin >> v[i];
     }
 
-    for(int i = 0 ; i < N-1 ; i++) {
-        for(int j = i+1 ; j < N ; j++) {
-            int ave = getAverage(i, j);
+    for(int i = 0 ; i < N ; i++) {
+        for(int j = i ; j < N ; j++) {
+            double ave = getAverage(i, j);
             for(int k = i ; k <= j ; k++) {
                 if(v[k] == ave) {
                     cnt++;
