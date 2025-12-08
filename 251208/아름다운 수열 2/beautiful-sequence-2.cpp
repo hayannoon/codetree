@@ -32,10 +32,11 @@ int main() {
         
         if(tmp == v2) {
             s.insert(copied);
+            cnt++;
         }
     }
     
-    cout << s.size() << "\n";
+    cout << cnt << "\n";
 
     return 0;
 }
